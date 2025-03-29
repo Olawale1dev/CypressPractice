@@ -1,0 +1,22 @@
+{
+  "name": "cypress-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "cypress": "^13.16.0",
+    "dotenv": "^16.4.7",
+    "googleapis": "^148.0.0",
+    "html-to-text": "^9.0.5",
+    "imap-simple": "^5.1.0"
+  },
+  "devDependencies": {
+    "mochawesome": "^7.1.3"
+  }
+}
