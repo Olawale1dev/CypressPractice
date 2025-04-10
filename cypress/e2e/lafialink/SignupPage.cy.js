@@ -49,7 +49,7 @@ describe('Lafialink Signup Page', () => {
           cy.task("getOTPFromGmail", { email }).then((otp) => {
             if (otp) {
               // Success - use the OTP
-              cy.log(`✅ Successfully retrieved OTP: ${otp}`);
+              cy.log(` Successfully retrieved OTP: ${otp}`);
               cy.get("#otp").clear().type(otp);
               
               cy.get(".cds--btn.cds--layout--size-lg.cds--btn--primary").click();
@@ -57,7 +57,7 @@ describe('Lafialink Signup Page', () => {
   .should("be.visible")
   .then(($element) => {
     // Optionally log that we've successfully seen the message
-    cy.log("✅ Successfully detected the 'Invalid OTP' message");
+    cy.log(" Successfully detected the 'Invalid OTP' message");
   }); // Adjust text to match your actual error message
 
 // If you want to verify it disappears after a short time
